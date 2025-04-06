@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.course-box {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.course-box:nth-child(1) { background: linear-gradient(to right, #ff416c, #ff4b2b); }
+.course-box:nth-child(2) { background: linear-gradient(to right, #ff0000, #cc0000); }
+.course-box:nth-child(3) { background: linear-gradient(to right, #00c6ff, #0072ff); }
+.course-box:nth-child(4) { background: linear-gradient(to right, #f7971e, #ffd200); }
+.course-box:nth-child(5) { background: linear-gradient(to right, #34e89e, #0f3443); }
+.course-box:nth-child(6) { background: linear-gradient(to right, #b24592, #f15f79); }
+.course-box:nth-child(7) { background: linear-gradient(to right, #6a11cb, #2575fc); }
+.course-box:nth-child(8) { background: linear-gradient(to right, #ff512f, #dd2476); }
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background: #555;
+    border-radius: 5px;
+}
